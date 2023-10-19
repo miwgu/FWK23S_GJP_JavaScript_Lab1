@@ -396,6 +396,10 @@ dbwebb.assert("3.3", ANSWER, false);
  *
  * Write your code below and put the answer into the variable ANSWER.
  */
+// If you write condition while (total<=goal) when reach the exact goal( for example I rewrite goal =478 )
+//the loop still try to add 6 to total. 
+//So when the total reach 478 still add 6 to total and total becomes 484 and counter becomes 79   (I interpret the requirement when reach the 478 while loop need to stop to add 6)
+//My loop while (total<goal) will stop when total is equal to or greater than goal, without going beyond it
 
 var add=6;
 var goal=481;
