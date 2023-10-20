@@ -164,7 +164,9 @@ if(sum<17){
     answer="pick";
 } else if(sum>=17&&sum<21){
     answer="stop"
-} else{
+} else if(sum==21){
+    answer="Black jack"
+}else{
     answer="busted"
 }
 
@@ -250,10 +252,8 @@ switch(myFruit){
         message="The banana is yellow.";
         break;
     case "apple":
-        message="The apple is green.";
-        break;
     case "kiwi":
-        message="The banana is green.";
+        message="The "+myFruit+ " is green.";
         break;
     case "plum":
         message="The plum is purple.";
@@ -368,7 +368,7 @@ var end_number=45;
 let text="";
 
 for(var i= start_number; i<=end_number; i++){
-    if(i%2===0){
+    if(i%2===0){     //You can write (i%2==0) This is boolean "true"
         text+= i+",";
     }
 }
